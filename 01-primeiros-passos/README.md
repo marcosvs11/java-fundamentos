@@ -24,11 +24,17 @@ Entender como um programa Java é escrito, compilado e executado.
 
 ## Primeiro programa
  
--
+- Hello, World! é o primeiro programa que geralmente se aprende em qualquer linguagem de programação. Ele serve como um exemplo simples para demonstrar a sintaxe básica da linguagem e como compilar e executar um programa.
 
 ## Como executei
 
--
+'''bash
+    public class HelloWorld {
+        static void main(String[] args) {
+            System.out.println("Hello, World!");
+        }
+    }
+'''
 
 ## Referências utilizadas
 
