@@ -26,3 +26,6 @@ replay_pid*
 .idea/
 *.iml
 out/
+
+# Guia local deste notebook
+/AMBIENTE-INTELLIJ.md

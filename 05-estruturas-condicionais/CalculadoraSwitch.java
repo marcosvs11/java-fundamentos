@@ -37,7 +37,7 @@ public class CalculadoraSwitch {
                 } else {
                     resultado = primeiroValor / segundoValor;
                     operacao = primeiroValor + " / " + segundoValor + " = " + resultado;
-                }y
+                }
 
                 break;
             default:

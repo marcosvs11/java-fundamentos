@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DescontoCompraa {
+public class DescontoCompra {
     public static void main(String[] args) {
         var teclado = new Scanner(System.in);
         double desconto;
