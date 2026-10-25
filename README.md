@@ -1,135 +1,105 @@
 # Java Fundamentos
 
-Repositório de estudos de Java, com exercícios organizados por assunto, anotações e pequenos projetos.
+Repositório de aprendizagem em Java. Aqui registro exercícios, anotações e pequenas experiências organizadas por assunto. O objetivo é construir fundamentos e autonomia gradualmente, com interesse atual em desenvolvimento backend.
 
-Comecei com Portugol e Python para desenvolver minha lógica de programação. Depois de concluir meu primeiro projeto em Python, o Financial Ledger, estou direcionando os estudos para Java e orientação a objetos, com o objetivo de atuar no desenvolvimento backend.
-
-Este repositório registra meu aprendizado. Os assuntos abaixo são uma trilha planejada e não representam conhecimentos já dominados.
+Concluí as aulas e os exercícios previstos de Java Básico. O próximo conteúdo principal é Programação Orientada a Objetos (POO), pelo Curso em Vídeo. Concluir um curso registra o percurso de estudo; não significa dominar automaticamente cada assunto.
 
 ## Como estudo
 
-1. Escolho um assunto e defino o que quero conseguir fazer com ele.
-2. Assisto à aula correspondente do curso principal e faço pequenas experiências no código.
-3. Resolvo os exercícios da aula sem acompanhar a solução.
-4. Pratico uma variação própria ou um exercício complementar do mesmo assunto.
+1. Escolho um assunto e defino o que quero conseguir fazer.
+2. Estudo a aula principal e faço experiências pequenas no código.
+3. Resolvo exercícios sem acompanhar a solução.
+4. Faço uma variação própria ou um exercício complementar.
 5. Verifico casos comuns, limites e entradas inválidas quando fizer sentido.
-6. Registro uma dificuldade, o que aprendi e a origem dos exercícios.
-7. Retomo um exercício em outro dia, sem consultar a solução anterior.
+6. Registro dúvidas, aprendizados e a origem dos exercícios no README do assunto.
+7. Retomo o conteúdo depois, tentando explicar, adaptar e depurar sem copiar uma solução.
 
-O objetivo é conseguir explicar, adaptar e depurar o código. Consultar documentação faz parte do processo; copiar uma solução não substitui a prática.
+Consultar documentação e pedir explicações fazem parte do aprendizado. Código feito com ajuda serve como material de estudo, mas não é, por si só, evidência de autonomia.
 
-## Trilha de estudos
+## Organização atual
 
-Criarei cada pasta quando começar o assunto. Não é necessário abrir todas de uma vez.
+As pastas seguem a sequência que construí durante os estudos. Os nomes abaixo descrevem o conteúdo; não são uma declaração de domínio.
 
-| Pasta planejada | Conteúdo principal | Evidência de aprendizado |
-| --- | --- | --- |
-| `01-primeiros-passos` | JDK, compilação, execução, saída e erros básicos | Executar um programa próprio e explicar o papel do JDK |
-| `02-tipos-e-operadores` | Tipos, variáveis, entrada, conversões e operadores | Ler dados e realizar cálculos entendendo os tipos usados |
-| `03-condicionais` | `if`, `else`, `switch` e expressões booleanas | Resolver uma decisão com casos de fronteira |
-| `04-repeticao` | `for`, `while`, `do-while` e acumuladores | Construir um menu e explicar a condição de parada |
-| `05-arrays-e-strings` | Arrays, índices, percursos e operações com texto | Processar dados sem acessar índices inválidos |
-| `06-metodos` | Parâmetros, retorno, escopo e decomposição | Dividir um problema em métodos com responsabilidades claras |
-| `07-classes-e-objetos` | Estado, comportamento, construtores e encapsulamento | Modelar uma classe e proteger suas regras |
-| `08-composicao-e-polimorfismo` | Composição, interfaces, herança e polimorfismo | Justificar a relação entre classes com um exemplo próprio |
-| `09-colecoes-e-excecoes` | `List`, `Set`, `Map`, generics básicos e exceções | Escolher uma coleção e tratar erros esperados |
-| `10-arquivos-datas-e-valores` | Arquivos, `java.time` e `BigDecimal` | Persistir dados e lidar com datas e valores monetários |
-| `11-testes-e-build` | JUnit, Maven e organização de projetos | Executar testes de regras de negócio de forma repetível |
+| Pasta | Conteúdo |
+| --- | --- |
+| `01-primeiros-passos` | JDK, compilação, execução e primeiros programas |
+| `02-variaveis` | Tipos, variáveis e entrada de dados |
+| `03-operadores-aritmeticos` | Operações, cálculos e classe `Math` |
+| `04-operadores-logicos-e-relacionais` | Comparações, lógica booleana e operador ternário |
+| `05-estruturas-condicionais` | `if`, `else`, `switch` e validações |
+| `06-estruturas-repetições` | `for`, `while`, `do-while`, contadores e acumuladores |
+| `07-vetores` | Arrays, percursos e `ArrayList` |
+| `08-métodos` | Parâmetros, retorno e decomposição de problemas |
 
-Testes manuais e depuração serão praticados desde o início. JUnit e Maven entram depois, quando houver métodos e classes úteis para testar.
+Os arquivos de cada assunto ficam na pasta correspondente. Não mantenho uma sequência paralela de pastas por plataforma; registro a origem do exercício no README do assunto. Assim, materiais do Curso em Vídeo, Codédex, DIO e exercícios autorais podem praticar o mesmo tema juntos.
 
-Após essa base: SQL, HTTP/JSON e uma API com Spring Boot em um repositório de projeto. Este repositório continuará dedicado aos fundamentos e às revisões.
-
-## Organização de cada assunto
-
-Exemplo de caminhos para uma pasta de estudo:
-
-```text
-03-condicionais/README.md
-03-condicionais/exercicios/Ex01ClassificarNota.java
-03-condicionais/exercicios/Ex02CompararValores.java
-```
-
-Esses nomes são exemplos, não exercícios já implementados. Cada programa inicial será independente e terá um nome de classe igual ao nome do arquivo, respeitando maiúsculas e minúsculas.
-
-O README do assunto terá objetivo, referências, exercícios, testes relevantes e dúvidas. Usarei o [modelo de tópico](MODELO-TOPICO.md) como ponto de partida, preenchendo apenas o que for útil.
-
-Não organizarei uma segunda sequência de pastas por plataforma: a origem ficará registrada ao lado do exercício. Assim, exercícios do Curso em Vídeo, do Codédex e desafios próprios poderão estudar o mesmo conteúdo juntos.
+Novas pastas serão criadas quando eu começar um conteúdo e tiver material para registrar. POO é o próximo assunto. Coleções, exceções, arquivos, testes e ferramentas de build serão organizados conforme avançarem os estudos, sem criar pastas vazias para uma trilha distante.
 
 ## Ambiente e execução
 
-Ambiente planejado: JDK 25 LTS e o IDE Intellij IDEA. Se o JDK 21 já estiver configurado, ele atende a esta trilha inicial; não é necessário mudar apenas para começar. Registrarei aqui a versão realmente utilizada após configurar o ambiente.
-
-Verificar o ambiente:
+Confiro as versões instaladas com:
 
 ```bash
 java --version
 javac --version
 ```
 
-Para um exercício inicial de arquivo único, sem declaração de pacote nem dependências, o comando abaixo pode ser executado na raiz do repositório, depois de criar o arquivo do exemplo:
+O JDK 25 LTS é a versão-alvo planejada. Alguns exercícios usam uma forma simplificada do método de entrada, como `static void main(String[] args)` sem `public`, aceita a partir do Java 25. Portanto, o JDK 21 pode não executar todos os arquivos nesse formato. Se eu quiser manter compatibilidade com versões anteriores, devo usar a assinatura tradicional `public static void main(String[] args)` nesses exercícios.
+
+Para executar um arquivo isolado, sem pacote ou dependências, posso usar o modo de arquivo-fonte, a partir da raiz:
 
 ```bash
-java 03-condicionais/exercicios/Ex01ClassificarNota.java
+java 05-estruturas-condicionais/ParOuImpar.java
 ```
 
-Também estudarei o processo explícito de compilação e execução:
+Também posso compilar e executar explicitamente:
 
 ```bash
-javac -d out 03-condicionais/exercicios/Ex01ClassificarNota.java
-java -cp out Ex01ClassificarNota
+javac -d out 05-estruturas-condicionais/ParOuImpar.java
+java -cp out ParOuImpar
 ```
 
-No início, usarei a estrutura tradicional de classe com `public static void main(String[] args)`, sem recursos de prévia. Projetos com várias classes terão suas próprias instruções de execução. Quando começar pacotes e Maven, adotarei a estrutura apropriada para esses projetos.
+O diretório `out` contém arquivos gerados e não deve ser versionado. Exercícios com mais de uma classe ou dependências precisam de instruções próprias quando essa necessidade surgir.
 
 ## Padrões de organização
 
-- Pastas de assuntos: numeração e nomes descritivos, como `03-condicionais`.
-- Classes: `PascalCase`; métodos e variáveis: `camelCase`; pacotes, quando utilizados: nomes em minúsculas.
-- Nomes no código preferencialmente em inglês; explicações em português. Clareza é mais importante que traduções forçadas.
-- Evitar várias classes chamadas `Main` no mesmo pacote. Usar nomes distintos nos exercícios independentes.
-- Manter códigos-fonte e instruções no Git; deixar arquivos compilados e configurações locais fora do versionamento.
-- Fazer commits com mudanças compreensíveis. Exemplos: `docs: organize Java study roadmap` e `feat: add conditional exercises`.
-- Criar branches quando ajudarem a organizar uma mudança maior. Não é necessário um pull request para cada exercício isolado.
+- Pastas usam numeração e nomes descritivos, seguindo a sequência real de estudo.
+- Classes usam `PascalCase`; métodos e variáveis usam `camelCase`; nomes de pacotes, quando utilizados, ficam em minúsculas.
+- Explicações e anotações ficam em português; nomes no código podem ficar em inglês quando isso for mais claro.
+- Exercícios independentes usam nomes de classe distintos, em vez de várias classes chamadas `Main`.
+- O código-fonte e as instruções ficam no Git; configurações locais e arquivos compilados ficam fora.
+- Cada README de assunto registra objetivo, referências, exercícios, origem, dúvidas e verificações relevantes. Uso o [modelo de tópico](MODELO-TOPICO.md) como ponto de partida e preencho apenas as seções úteis.
 
-## Referências e quando usar
+## Referências de estudo
 
-| Referência | Papel no estudo |
+| Referência | Uso |
 | --- | --- |
-| [Curso em Vídeo: Java Básico](https://www.cursoemvideo.com/curso/java-basico/) | Sequência principal para fundamentos; priorizar os conteúdos de linguagem |
-| [Curso em Vídeo: Java POO](https://www.cursoemvideo.com/curso/java-poo/) | Sequência principal após métodos e fundamentos |
-| [Dev.java](https://dev.java/learn/) | Documentação e tutoriais oficiais para dúvidas e recursos da linguagem |
-| [Codédex: Java](https://www.codedex.io/java) | Exercícios complementares do assunto atual, conforme o conteúdo disponível no meu acesso |
-| [Exercism: Java](https://exercism.org/tracks/java) | Alternativa de prática com exercícios e testes; não precisa ser usado junto com o Codédex em toda sessão |
+| [Curso em Vídeo: Java Básico](https://www.cursoemvideo.com/curso/java-basico/) | Trilha principal concluída para os fundamentos |
+| [Curso em Vídeo: Java POO](https://www.cursoemvideo.com/curso/java-poo/) | Próxima trilha principal |
+| [Codédex: Java](https://www.codedex.io/java) | Exercícios e explicações complementares |
+| [DIO](https://www.dio.me/) | Cursos e conteúdos complementares de Java |
+| [Dev.java](https://dev.java/learn/) | Documentação e tutoriais oficiais da linguagem |
 
-Usarei um curso principal e uma fonte complementar por vez. As partes de interface gráfica podem ser retomadas depois; o foco inicial é linguagem, orientação a objetos e programas de terminal. Para instalação e diferenças de versão, consultarei a documentação atual.
+Usarei um curso principal e fontes complementares conforme a necessidade, sem tentar concluir várias trilhas equivalentes ao mesmo tempo. As partes de interface gráfica podem ser retomadas mais tarde; o foco atual é linguagem, POO e programas de terminal.
 
 Referências para etapas posteriores:
 
 - [JUnit](https://docs.junit.org/current/user-guide/): testes automatizados.
 - [Maven](https://maven.apache.org/guides/getting-started/): dependências e build.
 - [Tutorial do PostgreSQL](https://www.postgresql.org/docs/current/tutorial.html): fundamentos de SQL e banco de dados.
-- [Spring: serviço REST](https://spring.io/guides/gs/rest-service/): primeira API, depois da base de Java e HTTP.
+- [Spring: serviço REST](https://spring.io/guides/gs/rest-service/): primeira API, depois da base de Java, SQL e HTTP.
 
-## Critérios para avançar
+## Como avalio meu progresso
 
-Antes de considerar um assunto consolidado, preciso conseguir:
+Antes de considerar um assunto consolidado, procuro conseguir:
 
 - Explicar a ideia com minhas palavras e dar um exemplo.
 - Resolver uma pequena variação sem copiar uma resposta pronta.
-- Identificar um erro e verificar a correção.
+- Identificar um erro, entender a causa e verificar a correção.
 - Retomar o assunto em outro dia e ainda conseguir aplicá-lo.
 
-Posso avançar com dúvidas registradas e revisá-las depois. Não preciso dominar todos os detalhes de uma API para seguir estudando.
+Posso avançar com dúvidas registradas e revisá-las depois. Não preciso dominar todos os detalhes de uma API antes de continuar o percurso.
 
-## Projetos e progresso
+## Projetos
 
-As [ideias de implementação](IDEIAS.md) ligam os conteúdos a problemas concretos. Trabalharei em uma ideia por vez, começando por um escopo pequeno.
-
-- [ ] Configurar e registrar o ambiente.
-- [ ] Consolidar fundamentos e métodos.
-- [ ] Aplicar classes, encapsulamento, composição e interfaces.
-- [ ] Utilizar coleções, exceções e persistência.
-- [ ] Concluir um pequeno projeto Java com testes e instruções de execução.
-
-Atualizarei estas marcações com base no que conseguir demonstrar. O progresso será registrado nos READMEs dos assuntos, sem necessidade de um relatório extenso para cada exercício.
+As [ideias de implementação](IDEIAS.md) conectam os assuntos a problemas concretos. Escolho uma ideia por vez, começando por um escopo pequeno. Projetos que crescerem e precisarem de estrutura, dependências, testes ou instruções próprias poderão ter um repositório separado.
