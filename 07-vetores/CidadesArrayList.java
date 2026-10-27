@@ -1,14 +1,19 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
-public class CidadeArrayList {
+public class CidadesArrayList {
     public static void main (String[] args) {
-        var teclado = new Scanner(System.in);
         ArrayList<String> cidades = new ArrayList<>();
-        for (int i = 0; i < 3; i++) {
-            System.out.println("Digite uma cidade: ");
-            cidades.add(teclado.next());
-        }
-        System.out.println(cidades);
+        cidades.add("Cuiabá");
+        cidades.add("Rondonópolis");
+        cidades.add("Rio de Janeiro");
+        System.out.println("Lista original: " + cidades);
+        System.out.println("2° cidade: " + cidades.get(1));
+        cidades.set(1, "Campo Grande");
+        System.out.println("Lista índice 1 modificado: " + cidades);
+        cidades.remove(0);
+        System.out.println("Lista índice 0 removido: " + cidades);
+        System.out.println("Lista final: " + cidades);
+        System.out.println("Tamanho da lista: " + cidades.size() + " cidades");
+
     }
 }
