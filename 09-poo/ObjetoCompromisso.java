@@ -13,5 +13,15 @@ public class ObjetoCompromisso {
         dentista.status();
         dentista.remarcar();
         dentista.status();
+        System.out.println();
+        Compromisso demartologista = new Compromisso();
+        demartologista.local = "Consultório dermatológico";
+        demartologista.objetivo = "Acompanhamento das machas acnes ";
+        demartologista.horario = 8.15f;
+        demartologista.dia = 22;
+        demartologista.mes = "Novembro";
+        demartologista.ano = 2026;
+        demartologista.recorrencia = "Mensalemente";
+        demartologista.status();
     }
 }

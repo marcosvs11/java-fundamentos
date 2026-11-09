@@ -14,11 +14,14 @@ public class Compromisso {
         String horarioTexto = Float.toString(this.horario);
         String horarioFormatado = horarioTexto.replace(".", "h");
         if (!this.cancelado) {
-            System.out.printf("Você tem um compromisso no(a) %s, com o objetivo de %s!\n", this.local, this.objetivo);
-            System.out.printf("Está marcado para o dia %s, no mês de %s, no ano %s, as %sm!\n", this.dia, this.mes, this.ano, horarioFormatado);
-            System.out.println("Compromisso de recorrência " + this.recorrencia);
+            System.out.printf("*Você tem um compromisso no(a) %s: \n", this.local);
+            System.out.printf("     -> Objetivo: %s!\n", this.objetivo);
+            System.out.printf("     -> Data: Dia %s, no mês de %s, no ano %s, as %sm!\n", this.dia, this.mes, this.ano, horarioFormatado);
+            System.out.println("    OBS: Compromisso de recorrência " + this.recorrencia);
         } else {
-            System.out.println("Compromisso cancelado!");
+            System.out.println();
+            System.out.println("ATENÇÃO, COMPROMISSO CANCELADO!");
+            System.out.println();
         }
     }
     void cancelar() {
@@ -26,7 +29,7 @@ public class Compromisso {
     }
     void remarcar() {
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Remarcando o compromisso: ");
+        System.out.println("Remarcando o compromisso... ");
         System.out.print("Dia: ");
         this.dia = teclado.nextInt();
         System.out.print("Mes: ");
