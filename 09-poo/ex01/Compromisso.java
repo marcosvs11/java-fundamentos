@@ -1,3 +1,5 @@
+package ex01;
+
 import java.util.Scanner;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -92,7 +94,7 @@ public class Compromisso {
             System.out.printf("*Você tem um compromisso no(a) %s: \n", this.getLocal());
             System.out.printf("     -> Objetivo: %s!\n", this.getObjetivo());
             System.out.printf("     -> Data: Dia %s, as %sm, no mês de %s de %s!\n", this.getDia(), horarioFormatado, this.getMes(), this.getAno());
-            System.out.println("    OBS: Compromisso de recorrência " + this.getRecorrencia());
+            System.out.println("    OBS: ex01.Compromisso de recorrência " + this.getRecorrencia());
         } else {
             System.out.println();
             System.out.println("*Atenção, compromisso no(a) " + this.getLocal() + " CANCELADO!");
@@ -111,7 +113,7 @@ public class Compromisso {
         System.out.print("Horario: ");
         this.setHorario(teclado.nextFloat());
         this.cancelado = false;
-        System.out.println("*Compromisso remarcado!");
+        System.out.println("*ex01.Compromisso remarcado!");
         this.status();
     }
 }

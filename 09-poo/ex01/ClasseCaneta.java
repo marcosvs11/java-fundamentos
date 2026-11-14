@@ -1,3 +1,5 @@
+package ex01;
+
 public class ClasseCaneta {
     // atributos da minha classe
     String modelo;

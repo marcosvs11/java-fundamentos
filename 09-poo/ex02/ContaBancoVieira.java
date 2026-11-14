@@ -1,3 +1,5 @@
+package ex02;
+
 public class ContaBancoVieira {
     public static void main(String[] args) {
         BancoVieira contaMarcos = new BancoVieira();

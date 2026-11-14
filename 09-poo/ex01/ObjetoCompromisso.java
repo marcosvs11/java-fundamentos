@@ -1,3 +1,5 @@
+package ex01;
+
 public class ObjetoCompromisso {
     public static void main(String[] args) {
         Compromisso dentista = new Compromisso("Dentista", "Limpeza dentária", 17.35f, 11, "Mensalmente");

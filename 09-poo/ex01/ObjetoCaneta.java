@@ -1,3 +1,5 @@
+package ex01;
+
 public class ObjetoCaneta {
     public static void main(String[] args) {
         ClasseCaneta caneta01 = new ClasseCaneta();
