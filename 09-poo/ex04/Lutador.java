@@ -1,6 +1,6 @@
 package ex04;
 
-public class UltraEmojiCombat {
+public class Lutador {
     // atributos
     private String nome;
     private String nacionalidade;
@@ -45,7 +45,7 @@ public class UltraEmojiCombat {
         setEmpates(getEmpates() + 1);
     }
     // construtor
-    public UltraEmojiCombat(String nome, String nacionalidade, int idade, double altura, double peso, int vitorias, int derrotas, int empates) {
+    public Lutador(String nome, String nacionalidade, int idade, double altura, double peso, int vitorias, int derrotas, int empates) {
         setNome(nome);
         setNacionalidade(nacionalidade);
         setIdade(idade);

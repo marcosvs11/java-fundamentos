@@ -3,31 +3,28 @@ import java.util.ArrayList;
 
 public class InscreverLutador {
     public static void main(String[] args) {
-        ArrayList<UltraEmojiCombat> lutadores = new ArrayList<>();
-        lutadores.add(new UltraEmojiCombat(
+        ArrayList<Lutador> lutadores = new ArrayList<>();
+        Luta luta = new Luta();
+        lutadores.add(new Lutador(
             "Pretty Boy", "França", 31, 1.75, 68.9, 11, 2, 1
         ));
-        lutadores.add(new UltraEmojiCombat(
+        lutadores.add(new Lutador(
            "Putscript", "Brasil", 29, 1.68, 57.8, 14, 2, 3
         ));
-        lutadores.add(new UltraEmojiCombat(
+        lutadores.add(new Lutador(
            "SnapShadow", "EUA", 35, 1.65, 80.9, 12,2,1
         ));
-        lutadores.add(new UltraEmojiCombat(
+        lutadores.add(new Lutador(
            "DeadCode", "Austrália", 28, 1.93, 81.6, 13, 0, 2
         ));
-        lutadores.add(new UltraEmojiCombat(
+        lutadores.add(new Lutador(
             "Ufcobol", "Brasil", 37, 1.70, 119.3, 5, 4, 3
         ));
-        lutadores.add(new UltraEmojiCombat(
+        lutadores.add(new Lutador(
             "Nerdaad", "EUA", 30, 1.81, 105.7, 12, 2, 4
         ));
 
-        lutadores.get(2).apresentar();
-        lutadores.get(5).apresentar();
-        lutadores.get(0).apresentar();
-        lutadores.get(4).apresentar();
-        lutadores.get(1).apresentar();
-        lutadores.get(3).apresentar();
+        luta.marcarLuta(lutadores.get(0), lutadores.get(1));
+        luta.Lutar();
     }
 }
