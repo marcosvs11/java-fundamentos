@@ -9,47 +9,83 @@ public class Livro implements Publicacao {
     private Pessoa leitor;
 
     public String maisDetalhes() {
-        return "Livro{" +
-            "titulo='" + titulo + '\'' +
-            ", autor='" + autor + '\'' +
-            ", totPaginas=" + totPaginas +
-            ", aberta=" + aberta +
-            ", leitor=" + leitor +
-            '}';
+        return "Livro { " +
+            "Titulo = '" + titulo + '\'' +
+            ",\n Autor = '" + autor + '\'' +
+            ",\n Total de paginas = " + totPaginas +
+            ",\n Página Atual = " + pagAtual +
+            ",\n Aberta = " + aberta +
+            ",\n Leitor = " + leitor.getNome() +
+            ",\n Gênero = " + leitor.getSexo() +
+             '}' + "\n";
     }
 
-    public Livro(String autor, String titulo, int totPaginas, Pessoa leitor) {
-        this.autor = autor;
+    public Livro(String titulo, String autor, int totPaginas, Pessoa leitor) {
         this.titulo = titulo;
+        this.autor = autor;
         this.totPaginas = totPaginas;
         this.pagAtual = 0;
         this.aberta = false;
         this.leitor = leitor;
-
     }
 
     @Override
-    public void abrir(boolean abrir) {
+    public void abrir() {
+        if (aberta) {
+            System.out.println("O livro já está aberto");
+            return;
+        }
         aberta = true;
     }
 
     @Override
-    public void fechar(boolean fechar) {
+    public void fechar() {
+        if (!aberta) {
+            System.out.println("O livro já está fechado");
+            return;
+        }
         aberta = false;
     }
 
     @Override
     public void folhear(int pagina) {
+        if (aberta) {
+            if (pagina < 0 || pagina > totPaginas) {
+                System.out.println("Número da página inválido");
+                return;
+            }
+        } else {
+            System.out.println("Não tem como folhear com o livro fechado");
+            return;
+        }
         pagAtual = pagina;
     }
 
     @Override
     public void avancarPag() {
+        if (aberta) {
+            if (pagAtual == totPaginas) {
+                System.out.println("O livro chegou ao fim");
+                return;
+            }
+        } else {
+            System.out.println("Não tem como avançar a página com o livro fechado");
+            return;
+        }
         pagAtual++;
     }
 
     @Override
     public void voltarPag() {
+        if (aberta) {
+            if (pagAtual == 0) {
+                System.out.println("O livro não tem mais paginas anteriores");
+                return;
+            }
+        } else {
+            System.out.println("Não tem como voltar a página com o livro fechado");
+            return;
+        }
         pagAtual--;
     }
 
@@ -57,7 +93,7 @@ public class Livro implements Publicacao {
         return titulo;
     }
 
-    public void setTitulo(String titulo) {
+    private void setTitulo(String titulo) {
         this.titulo = titulo;
     }
 
@@ -65,7 +101,7 @@ public class Livro implements Publicacao {
         return autor;
     }
 
-    public void setAutor(String autor) {
+    private void setAutor(String autor) {
         this.autor = autor;
     }
 
@@ -73,7 +109,7 @@ public class Livro implements Publicacao {
         return totPaginas;
     }
 
-    public void setTotPaginas(int totPaginas) {
+    private void setTotPaginas(int totPaginas) {
         this.totPaginas = totPaginas;
     }
 
@@ -81,7 +117,7 @@ public class Livro implements Publicacao {
         return pagAtual;
     }
 
-    public void setPagAtual(int pagAtual) {
+    private void setPagAtual(int pagAtual) {
         this.pagAtual = pagAtual;
     }
 
@@ -89,7 +125,7 @@ public class Livro implements Publicacao {
         return aberta;
     }
 
-    public void setAberta(boolean aberta) {
+    private void setAberta(boolean aberta) {
         this.aberta = aberta;
     }
 
@@ -97,7 +133,7 @@ public class Livro implements Publicacao {
         return leitor;
     }
 
-    public void setLeitor(Pessoa leitor) {
+    private void setLeitor(Pessoa leitor) {
         this.leitor = leitor;
     }
 }
